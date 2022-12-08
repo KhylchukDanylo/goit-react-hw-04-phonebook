@@ -1,0 +1,65 @@
+.title {
+  margin: 15px 0 0 15px;
+}
+
+.form {
+  border: solid black 1px;
+  width: 300px;
+  height: 100%;
+  margin: 15px 0 0 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  width: 300px;
+  height: 100%;
+  margin: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.form__text {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.form__input {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.form__input:last-of-type {
+  margin-bottom: 30px;
+}
+.form__btn {
+  background-color: white;
+  border: solid teal 1px;
+  border-radius: 5px;
+  width: 100px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__delete--contact {
+  background-color: white;
+  border: solid teal 1px;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__btn:hover,
+.form__btn:focus,
+.btn__delete--contact:hover,
+.btn__delete--contact:focus {
+  background-color: teal;
+  color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
