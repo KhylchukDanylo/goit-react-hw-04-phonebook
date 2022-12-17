@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './Filter.modyle.css';
 
 const Filrer = ({ value, onFilterValue }) => {
   return (
