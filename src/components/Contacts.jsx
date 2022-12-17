@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 const Contacts = ({ contacts, onDeleteContact }) => {
   return (
     <ul>
-      {contacts.map(elm => {
+      {contacts.forEach(elm => {
+        console.log(elm);
         return (
           <li key={elm.id}>
             {`${elm.name}: ${elm.number}`}{' '}
@@ -20,7 +21,6 @@ const Contacts = ({ contacts, onDeleteContact }) => {
     </ul>
   );
 };
-
 export default Contacts;
 Contacts.propTypes = {
   contacts: PropTypes.array,

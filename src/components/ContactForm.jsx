@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 class Form extends Component {
   state = { name: '', number: '' };
+
   handleChange = e => {
     const { name, value } = e.currentTarget;
     this.setState({
